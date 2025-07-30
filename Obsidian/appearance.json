@@ -1,0 +1,13 @@
+{
+  "cssTheme": "Obsidianite",
+  "enabledCssSnippets": [
+    "CyanVoxel's General Tweaks",
+    "Notebook Backgrounds",
+    "Colored Sidebar Items"
+  ],
+  "accentColor": "",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Arial",
+  "textFontFamily": "Arial",
+  "monospaceFontFamily": "Arial"
+}

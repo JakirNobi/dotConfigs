@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": "#1fadd1",
+    "recentlyUsedIcons": [
+      "LiFolder",
+      "LiBookTemplate",
+      "LiBookText",
+      "LiNetwork",
+      "LiWorkflow"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "2-Source Materials": "LiKey",
+  "3-Tags": "LiTags",
+  "6-Zettlekasten": "LiNetwork",
+  "4-Indexes": "LiBookText",
+  "5-Templates": "LiBookTemplate",
+  "7-Resources": "LiFolder",
+  "1-Organized View": "LiNotebook"
+}

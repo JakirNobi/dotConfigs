@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fe95e17ad3fa263",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e98185c18174d090",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a043fbc3e1d2f3bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f33c285811352d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79a586fb695076dd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0a2fee761435a6f3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7cedff0829de7c00",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "435afbbdd70f8b84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e4b401d20068452",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1e529ba7cfc6b9e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9baea8ebf7912c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a8f2ec2451873d8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0e5ea1af9e88577c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "5-Templates/Code Template.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Code Template"
+            }
+          },
+          {
+            "id": "0b103072f96a6f5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "48942d4de6712969",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "148c78387a96a443",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a03ec46d962e5be",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "github-sync:Sync with Remote": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "graph:Open graph view": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "79a586fb695076dd",
+  "lastOpenFiles": [
+    "5-Templates/Note template.md",
+    "6-Zettlekasten/Js Function.md",
+    "5-Templates/Code Template.md",
+    "5-Templates/Course template.md",
+    "6-Zettlekasten/JavaScript.md",
+    "README.md",
+    "1-Organized View/Active notes.md",
+    "7-Resources/WhatsApp Image 2025-07-30 at 9.27.48 PM.jpeg",
+    "7-Resources/WhatsApp Image 2025-07-30 at 9.18.41 PM.png",
+    "7-Resources/WhatsApp Image 2025-07-30 at 8.53.22 PM.jpeg",
+    "WhatsApp Image 2025-07-30 at 8.53.22 PM.jpeg",
+    "4-Indexes/Completed.md",
+    "3-Tags/Active.md",
+    "4-Indexes/Varsity MOC.md",
+    "4-Indexes/All-Js-notes.md",
+    "4-Indexes/All-Code-notes.md",
+    "1-Rough notes/rough1.md",
+    "3-Tags/Code.md",
+    "3-Tags/Js.md",
+    "6-Zettlekasten/Untitled.md",
+    "6-Zettlekasten/Control signal.md",
+    "6-Zettlekasten/ER to Schema.md",
+    "6-Zettlekasten/ER-Model.md",
+    "6-Zettlekasten/Deadlock Characterization.md",
+    "6-Zettlekasten/Datapath Elements.md",
+    "6-Zettlekasten/CPU and I_O Burst.md",
+    "2-Source Materials/Theory of Computation.md",
+    "2-Source Materials/Computer Architecture.md",
+    "2-Source Materials/Software Engineering.md",
+    "2-Source Materials/Operating systems.md"
+  ]
+}
