@@ -4,12 +4,14 @@ local options = {
         c = { "clang-format" },
         cpp = { "clang-format" },
         html = { "prettierd" },
-        css = { "prettierd" },
-        javascript = { "prettierd" },
-        typescript = { "prettierd" },
+        css = { "prettierd", stop_after_first = true },
+        javascript = { "prettier", stop_after_first = true },
+        javascriptreact = { "prettier", stop_after_first = true },
+        typescript = { "prettier", stop_after_first = true },
+        typescriptreact = { "prettier", stop_after_first = true },
         -- go = { "gofumpt", "goimports-reviser", "golines" },
         -- haskell = { "fourmolu", "stylish-haskell" },
-        -- python = { "isort", "black" },
+        python = { "isort", "black" },
     },
 
     formatters = {

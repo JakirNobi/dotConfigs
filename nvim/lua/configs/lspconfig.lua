@@ -13,8 +13,11 @@ lspconfig.servers = {
     -- "gopls",
     -- "hls",
     -- "ols",
-    "pyright",
+    -- "pyright",
     "ts_ls",
+    "pylsp",
+    "emmet_language_server",
+    "tailwindcss",
 }
 
 -- list of servers configured with default config.
@@ -23,7 +26,7 @@ local default_servers = {
     -- "pyright",
     -- "html",
     "cssls",
-    "ts_ls",
+    -- "ts_ls",
     -- "cssls",
 }
 
@@ -36,21 +39,21 @@ for _, lsp in ipairs(default_servers) do
     })
 end
 
-lspconfig.pyright.setup({
-    on_attach = function(client, bufnr)
-        on_attach(client, bufnr)
-    end,
-
-    on_init = function(client)
-        local default_venv_path =
-            require("lspconfig.util").path.join(vim.env.HOME, "virtualenvs", "nvim-venv", "bin", "python")
-        client.config.settings.python = client.config.settings.python or {}
-        client.config.settings.python.pythonPath = default_venv_path
-    end,
-
-    capabilities = capabilities,
-})
-
+-- lspconfig.pyright.setup({
+--     on_attach = function(client, bufnr)
+--         on_attach(client, bufnr)
+--     end,
+--
+--     on_init = function(client)
+--         local default_venv_path =
+--             require("lspconfig.util").path.join(vim.env.HOME, "virtualenvs", "nvim-venv", "bin", "python")
+--         client.config.settings.python = client.config.settings.python or {}
+--         client.config.settings.python.pythonPath = default_venv_path
+--     end,
+--
+--     capabilities = capabilities,
+-- })
+--
 lspconfig.clangd.setup({
     on_attach = function(client, bufnr)
         client.server_capabilities.documentFormattingProvider = false
@@ -59,6 +62,74 @@ lspconfig.clangd.setup({
     end,
     on_init = on_init,
     capabilities = capabilities,
+})
+
+lspconfig.emmet_language_server.setup({
+    capabilities = capabilities,
+    filetypes = {
+        "templ",
+        "html",
+        "css",
+        "php",
+        "javascriptreact",
+        "typescriptreact",
+        "javascript",
+        "typescript",
+        "jsx",
+        "tsx",
+    },
+})
+
+lspconfig.html.setup({
+    capabilities = capabilities,
+    filetypes = {
+        "templ",
+        "html",
+        "php",
+        "css",
+        "javascriptreact",
+        "typescriptreact",
+        "javascript",
+        "typescript",
+        "jsx",
+        "tsx",
+    },
+})
+
+lspconfig.ts_ls.setup({
+    capabilties = capabilities,
+    cmd = { "typescript-language-server", "--stdio" },
+    filetypes = {
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+    },
+    root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", ".git"),
+    single_file_support = true,
+})
+
+local function get_python_path()
+    local venv_path = os.getenv("VIRTUAL_ENV")
+    if venv_path then
+        return venv_path .. "/bin/python3"
+    else
+        -- Since you're on Arch Linux, we assume this path
+        return "/usr/bin/python3"
+    end
+end
+
+lspconfig.pylsp.setup({
+    capabilities = capabilities, -- fixed typo here
+    settings = {
+        pylsp = {
+            configurationSources = { "flake8" },
+        },
+        python = {
+            pythonPath = get_python_path(),
+        },
+    },
 })
 
 -- lspconfig.gopls.setup({
