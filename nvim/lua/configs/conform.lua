@@ -44,20 +44,20 @@ local options = {
         --         "--quote-style", "AutoPreferDouble",
         --     },
         -- },
-        -- -- Python
-        -- black = {
-        --     prepend_args = {
-        --         "--fast",
-        --         "--line-length",
-        --         "80",
-        --     },
-        -- },
-        -- isort = {
-        --     prepend_args = {
-        --         "--profile",
-        --         "black",
-        --     },
-        -- },
+        -- Python
+        black = {
+            prepend_args = {
+                "--fast",
+                "--line-length",
+                "79",
+            },
+        },
+        isort = {
+            prepend_args = {
+                "--profile",
+                "black",
+            },
+        },
     },
 
     format_on_save = {

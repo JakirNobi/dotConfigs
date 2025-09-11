@@ -22,12 +22,8 @@ lspconfig.servers = {
 
 -- list of servers configured with default config.
 local default_servers = {
-    -- "ols",
-    -- "pyright",
-    -- "html",
     "cssls",
-    -- "ts_ls",
-    -- "cssls",
+    "tailwindcss",
 }
 
 -- lsps with default config
