@@ -1,0 +1,29 @@
+{
+  "theme": "Dracula",
+  "selectedAuthType": "oauth-personal",
+  "mcpServers":{
+    "mcp-obsidian": {
+        "command": "uvx",
+        "args": [
+        "mcp-obsidian"
+        ],
+        "env": {
+        "OBSIDIAN_API_KEY": "f1b5241615627ab5f535428a68a44ad3fb7f66f50952240d6126b7ec964f7aa9"
+        }
+    },
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-94c3b0a11bce472db52509a35b863971"
+      }
+    },
+    "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "YOUR_API_KEY",
+        "Accept": "application/json, text/event-stream"
+      }
+    }
+  }
+}
